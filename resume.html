@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/icon.css">
     <link rel="icon" href="images/favicon.svg?v=so" type="image/svg+xml">
     <link rel="stylesheet" href="css/resume.css">
   </head>
@@ -28,14 +27,14 @@
       </a>
       <div class="toolbar-actions">
         <a class="toolbar-btn toolbar-btn-ghost" href="index.html">
-          <i class="fas fa-arrow-left"></i>
+          <svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg>
           <span>Portfolio</span>
         </a>
         <button class="theme-button" id="resume-theme-button" type="button" aria-label="Toggle color theme" title="Toggle color theme">
-          <i class="fas fa-sun" id="resume-theme-icon"></i>
+          <span id="resume-theme-icon" aria-hidden="true">&#9680;</span>
         </button>
         <button class="toolbar-btn toolbar-btn-primary" type="button" onclick="downloadResume()">
-          <i class="fas fa-download"></i>
+          <svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>
           <span>Download PDF</span>
         </button>
       </div>
@@ -45,18 +44,18 @@
       <section class="resume-hero">
         <div class="hero-identity">
           <div class="availability"><span></span> Available for remote &amp; freelance work</div>
-          <p class="resume-kicker">FULLSTACK DEVELOPER · SOFTWARE ENGINEER</p>
+          <p class="resume-kicker">SOFTWARE ENGINEER &amp; TECHNOLOGY LEADER</p>
           <h1>Sobowale <span>Olamide</span></h1>
           <p class="resume-lead">
-            Product-focused Fullstack Developer with 4+ years of hands-on experience creating responsive web applications, scalable APIs, digital platforms, and polished user experiences. CEO of Hurkify Technology Limited, combining technical execution with product strategy, team leadership, and client delivery.
+            Fullstack developer and CEO of Hurkify Technology Limited, building web applications, APIs, and digital platforms. Combines hands-on software engineering with product strategy and team leadership, with experience supporting healthcare operations and delivering client projects.
           </p>
         </div>
         <aside class="hero-contact" aria-label="Contact information">
-          <a href="mailto:sobowaleolamide2@gmail.com"><i class="fas fa-envelope"></i><span>sobowaleolamide2@gmail.com</span></a>
-          <a href="tel:+2349045083581"><i class="fas fa-phone"></i><span>(+234) 904 508 3581</span></a>
-          <span><i class="fas fa-location-dot"></i><span>Lagos State, Nigeria</span></span>
-          <a href="https://www.linkedin.com/in/olamide-sobowale-448958b7" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i><span>LinkedIn Profile</span></a>
-          <a href="https://github.com/Hurkify-Team" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>github.com/Hurkify-Team</span></a>
+          <a href="mailto:sobowaleolamide2@gmail.com"><svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3z M3 5l9 8 9-8"/></svg><span>sobowaleolamide2@gmail.com</span></a>
+          <a href="tel:+2349045083581"><svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3H3c0 10 8 18 18 18v-4l-5-2-2 3c-4-2-6-4-8-8l3-2z"/></svg><span>(+234) 904 508 3581</span></a>
+          <span><svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-9 8-14A8 8 0 0 0 4 8c0 5 8 14 8 14z M15 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/></svg><span>Lagos State, Nigeria</span></span>
+          <a href="https://www.linkedin.com/in/olamide-sobowale-448958b7" target="_blank" rel="noopener noreferrer"><svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v12 M4 3v2 M10 21V9h5v2c4-4 6 0 6 3v7 M10 14c0-4 6-4 6 0v7"/></svg><span>LinkedIn Profile</span></a>
+          <a href="https://github.com/Hurkify-Team" target="_blank" rel="noopener noreferrer"><svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 20c-5 2-5-3-7-3m14 5v-4c0-1-1-2-1-2 4 0 7-2 7-6 0-2-1-3-2-4 0-1 0-3-1-4-2 0-4 2-4 2-2-1-5-1-7 0 0 0-2-2-4-2-1 1-1 3-1 4-1 1-2 2-2 4 0 4 3 6 7 6-1 1-1 2-1 3v3"/></svg><span>github.com/Hurkify-Team</span></a>
         </aside>
       </section>
 
@@ -64,7 +63,7 @@
         <div class="resume-main-column">
           <section class="resume-section">
             <div class="section-heading">
-              <span>01</span>
+              <span>01 /</span>
               <div><p>CAREER</p><h2>Professional Experience</h2></div>
             </div>
 
@@ -174,40 +173,14 @@
 
           <section class="resume-section">
             <div class="section-heading">
-              <span>02</span>
-              <div><p>CASEWORK</p><h2>Selected Projects</h2></div>
+              <span>02 /</span>
+              <div><p>PROJECT HIGHLIGHTS</p><h2>Selected Projects</h2></div>
             </div>
             <div class="project-list">
-              <article class="resume-project">
-                <div><h3>Quix AI</h3><span>AI · EdTech</span></div>
-                <p>AI-powered study companion with flashcard and quiz generation, smart revision workflows, authentication, and student progress tracking.</p>
-                <small>React · TypeScript · Tailwind CSS · Supabase · OpenAI API</small>
-              </article>
-              <article class="resume-project">
-                <div><h3>Soft Store NG</h3><span>E-Commerce</span></div>
-                <p>Commerce platform with searchable product catalogs, persistent cart state, Paystack checkout, inventory tracking, and an admin dashboard.</p>
-                <small>React · Tailwind CSS · Supabase · Paystack</small>
-              </article>
-              <article class="resume-project">
-                <div><h3>Ephraim College</h3><span>Education</span></div>
-                <p>Dynamic international school website featuring immersive institutional storytelling, campus highlights, and a clear admissions journey.</p>
-                <small>React · Tailwind CSS · Framer Motion</small>
-              </article>
-              <article class="resume-project">
-                <div><h3>TaxClarity</h3><span>Public Information</span></div>
-                <p>Accessible digital experience that helps people better understand taxation in Nigeria through clear, user-focused content.</p>
-                <small>React · Tailwind CSS</small>
-              </article>
-              <article class="resume-project">
-                <div><h3>Result Processor</h3><span>EdTech Tool</span></div>
-                <p>Automates student score processing, evaluates academic performance, and generates printable report cards.</p>
-                <small>HTML5 · CSS3 · JavaScript</small>
-              </article>
-              <article class="resume-project">
-                <div><h3>V9 Technologies</h3><span>Agency Platform</span></div>
-                <p>Conversion-focused agency website with service discovery, interactive presentation, portfolio content, and lead capture.</p>
-                <small>React · Tailwind CSS · Framer Motion</small>
-              </article>
+              <article class="resume-project"><div><h3><a href="https://portal.hefamaaportal.com.ng/login" target="_blank" rel="noopener noreferrer">HEFAMAA Portal <span aria-hidden="true">&nearr;</span></a></h3><span>Health Tech</span></div><p>Health facility registration portal supporting the monitoring and regulation of health facilities in Lagos State.</p><small>TypeScript &middot; Next.js &middot; React</small></article>
+              <article class="resume-project"><div><h3><a href="https://hurkfield-rxuj.onrender.com" target="_blank" rel="noopener noreferrer">Hurkfield <span aria-hidden="true">&nearr;</span></a></h3><span>Field Research</span></div><p>Structured field data collection with survey templates, enumerator codes, GPS verification, and quality assurance monitoring.</p><small>Python</small></article>
+              <article class="resume-project"><div><h3><a href="https://hurkifytechologylimited.com" target="_blank" rel="noopener noreferrer">Hurkify Technology Limited <span aria-hidden="true">&nearr;</span></a></h3><span>Company Website</span></div><p>Official company website presenting software and IT services for businesses.</p><small>Next.js &middot; React &middot; Sanity &middot; Supabase</small></article>
+              <article class="resume-project"><div><h3><a href="https://edamaa.vercel.app/" target="_blank" rel="noopener noreferrer">Edamaa3D <span aria-hidden="true">&nearr;</span></a></h3><span>Education</span></div><p>Learning platform where students ask questions at specific video timestamps and discuss lessons with tutors and classmates.</p><small>Video learning &middot; Course platform</small></article>
             </div>
           </section>
         </div>
@@ -217,7 +190,7 @@
             <p class="side-eyebrow">AT A GLANCE</p>
             <div class="impact-stat"><strong>4+</strong><span>Years of hands-on experience</span></div>
             <div class="impact-stat"><strong>15+</strong><span>Products and projects delivered</span></div>
-            <div class="impact-stat"><strong>360°</strong><span>Product thinking, code, and delivery</span></div>
+            <div class="impact-stat"><strong>End to end</strong><span>Product strategy through deployment</span></div>
           </section>
 
           <section class="side-section">
@@ -228,11 +201,11 @@
             </div>
             <div class="skill-group">
               <h3>Backend &amp; Data</h3>
-              <p>Node.js, Express.js, REST APIs, MongoDB, SQL, Supabase, Authentication</p>
+              <p>Python, Django, Flask, Node.js, Express.js, REST APIs, PostgreSQL, MongoDB, SQL, Supabase, Authentication</p>
             </div>
             <div class="skill-group">
               <h3>Product &amp; Delivery</h3>
-              <p>Git, GitHub, UI/UX Design, SEO, Accessibility, Performance Optimization, Deployment</p>
+              <p>Docker, Git, GitHub, UI/UX Design, SEO, Accessibility, Performance Optimization, Deployment</p>
             </div>
           </section>
 
@@ -251,29 +224,29 @@
           <section class="side-section">
             <h2>Professional Links</h2>
             <div class="professional-links">
-              <a href="https://github.com/Hurkify-Team" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>GitHub / Hurkify-Team</span></a>
-              <a href="https://www.linkedin.com/in/olamide-sobowale-448958b7" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i><span>LinkedIn / Olamide Sobowale</span></a>
-              <a href="https://x.com/iam_mide_talk?s=21" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i><span>X / @iam_mide_talk</span></a>
-              <a href="https://www.threads.com/@mide_talk" target="_blank" rel="noopener noreferrer"><i class="fab fa-threads"></i><span>Threads / @mide_talk</span></a>
+              <a href="https://github.com/Hurkify-Team" target="_blank" rel="noopener noreferrer"><svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 20c-5 2-5-3-7-3m14 5v-4c0-1-1-2-1-2 4 0 7-2 7-6 0-2-1-3-2-4 0-1 0-3-1-4-2 0-4 2-4 2-2-1-5-1-7 0 0 0-2-2-4-2-1 1-1 3-1 4-1 1-2 2-2 4 0 4 3 6 7 6-1 1-1 2-1 3v3"/></svg><span>GitHub / Hurkify-Team</span></a>
+              <a href="https://www.linkedin.com/in/olamide-sobowale-448958b7" target="_blank" rel="noopener noreferrer"><svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v12 M4 3v2 M10 21V9h5v2c4-4 6 0 6 3v7 M10 14c0-4 6-4 6 0v7"/></svg><span>LinkedIn / Olamide Sobowale</span></a>
+              <a href="https://x.com/iam_mide_talk?s=21" target="_blank" rel="noopener noreferrer"><svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3l16 18h-4L2 3h4 M21 3L3 21"/></svg><span>X / @iam_mide_talk</span></a>
+              <a href="https://www.threads.com/@mide_talk" target="_blank" rel="noopener noreferrer"><svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7c-1-5-11-6-14 0-3 7 0 14 7 14 8 0 11-10 3-11-7-1-8 7-1 6 6-1 1-12-4-8"/></svg><span>Threads / @mide_talk</span></a>
             </div>
           </section>
 
           <section class="side-section availability-panel">
-            <i class="fas fa-briefcase"></i>
+            <svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v14H3z M8 7V3h8v4 M3 12h18 M10 12v3h4v-3"/></svg>
             <h2>Open to Opportunities</h2>
             <p>Available for full-time remote roles, technical partnerships, and selected freelance engagements.</p>
-            <a href="mailto:sobowaleolamide2@gmail.com">Start a conversation <i class="fas fa-arrow-right"></i></a>
+            <a href="mailto:sobowaleolamide2@gmail.com">Start a conversation <svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
           </section>
         </aside>
       </div>
 
       <footer class="resume-footer">
         <p>Sobowale Olamide · Fullstack Developer &amp; Software Engineer</p>
-        <p>References available upon request</p>
+        <p>Lagos, Nigeria &middot; Open to remote opportunities</p>
       </footer>
     </main>
 
-    <p class="download-hint"><i class="fas fa-circle-info"></i> In the print window, choose <strong>Save as PDF</strong> to download this resume.</p>
+    <p class="download-hint"><svg class="resume-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 11v6m0-10v1 M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0"/></svg> In the print window, choose <strong>Save as PDF</strong> to download this resume.</p>
 
     <script>
       const root = document.documentElement;
@@ -282,15 +255,18 @@
 
       function setResumeTheme(theme) {
         root.setAttribute('data-theme', theme);
-        themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        themeIcon.textContent = theme === 'dark' ? '\u2600' : '\u25d0';
+        themeButton.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
       }
 
-      setResumeTheme(localStorage.getItem('av-theme') || 'dark');
+      let savedTheme = 'light';
+      try { savedTheme = localStorage.getItem('resume-theme') || 'light'; } catch {}
+      setResumeTheme(savedTheme);
 
       themeButton.addEventListener('click', function () {
         const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         setResumeTheme(nextTheme);
-        localStorage.setItem('av-theme', nextTheme);
+        try { localStorage.setItem('resume-theme', nextTheme); } catch {}
       });
 
       function downloadResume() {
