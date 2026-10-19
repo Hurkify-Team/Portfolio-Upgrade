@@ -1,27 +1,27 @@
 /* Resume layout, responsive styles, and readable A4 printing. */
 :root {
   color-scheme:light;
-  --bg:#e9edf2;
+  --bg:#ecf0f1;
   --paper:#fff;
-  --side:#f4f7fa;
-  --ink:#172b40;
-  --body:#485b6d;
-  --muted:#65798a;
-  --line:#dce4eb;
-  --accent:#137b79;
-  --soft:#e6f3ef
+  --side:#f4f6f7;
+  --ink:#2c3e50;
+  --body:#566573;
+  --muted:#637582;
+  --line:#d5dbdb;
+  --accent:#2475a5;
+  --soft:#eaf3fa
 }
 [data-theme="dark"] {
   color-scheme:dark;
-  --bg:#0c1520;
-  --paper:#142232;
-  --side:#18293b;
-  --ink:#ecf2f7;
-  --body:#becbd7;
-  --muted:#9caebe;
-  --line:#2e4357;
-  --accent:#82d3c0;
-  --soft:#1c3a3c
+  --bg:#1a2530;
+  --paper:#243442;
+  --side:#2c3e50;
+  --ink:#ecf0f1;
+  --body:#bdc3c7;
+  --muted:#a9b7c0;
+  --line:#43576a;
+  --accent:#5dade2;
+  --soft:#263f53
 }
 * {
   box-sizing:border-box
@@ -45,7 +45,7 @@ button {
   font:inherit
 }
 a:focus-visible,button:focus-visible {
-  outline:3px solid #30ac94;
+  outline:3px solid #3498db;
   outline-offset:5px
 }
 .resume-ambient {
@@ -71,8 +71,8 @@ a:focus-visible,button:focus-visible {
   width:42px;
   height:42px;
   border-radius:12px;
-  background:#172f47;
-  color:#b5f4e4;
+  background:#2c3e50;
+  color:#ecf0f1;
   font-family:Outfit,sans-serif;
   font-weight:700;
   font-size:19px
@@ -105,11 +105,15 @@ a:focus-visible,button:focus-visible {
 }
 .toolbar-btn-primary {
   color:#fff;
-  border-color:#172f47;
-  background:#172f47
+  border-color:#c0392b;
+  background:#c0392b
+}
+.toolbar-btn-primary:hover {
+  background:#a93226;
+  border-color:#a93226
 }
 .toolbar-btn:hover,.theme-button:hover {
-  box-shadow:0 3px 12px #172b401a
+  box-shadow:0 3px 12px #2c3e501a
 }
 .resume-page {
   width:min(1120px,calc(100% - 48px));
@@ -118,14 +122,14 @@ a:focus-visible,button:focus-visible {
   box-shadow:0 24px 80px #182b4014;
   border-radius:4px;
   overflow:hidden;
-  border-top:5px solid #54b5a2
+  border-top:5px solid #e74c3c
 }
 .resume-hero {
   display:grid;
   grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);
   gap:54px;
   padding:48px 54px 44px;
-  background:#172f47;
+  background:#2c3e50;
   color:#fff
 }
 .availability {
@@ -133,7 +137,7 @@ a:focus-visible,button:focus-visible {
   align-items:center;
   gap:8px;
   margin-bottom:26px;
-  color:#bee3da;
+  color:#d1e8f7;
   font-size:10px;
   letter-spacing:.025em
 }
@@ -141,11 +145,11 @@ a:focus-visible,button:focus-visible {
   width:6px;
   height:6px;
   border-radius:50%;
-  background:#7bd3b8
+  background:#3498db
 }
 .resume-kicker {
   margin:0 0 12px;
-  color:#a2bacd;
+  color:#b9d5e8;
   font-size:10px;
   font-weight:600;
   letter-spacing:.17em
@@ -160,7 +164,7 @@ a:focus-visible,button:focus-visible {
 }
 .resume-hero h1 span {
   display:block;
-  color:#9fe0cc
+  color:#5dade2
 }
 .resume-lead {
   margin:24px 0 0;
@@ -186,12 +190,12 @@ a:focus-visible,button:focus-visible {
 }
 .hero-contact i {
   width:14px;
-  color:#8ed5c4;
+  color:#5dade2;
   text-align:center;
   flex-shrink:0
 }
 .hero-contact a:hover {
-  color:#9fe0cc
+  color:#5dade2
 }
 .resume-layout {
   display:grid;
@@ -569,12 +573,12 @@ a:focus-visible,button:focus-visible {
     color-scheme:light;
     --paper:#fff;
     --side:#fff;
-    --ink:#172b40;
+    --ink:#2c3e50;
     --body:#354657;
     --muted:#536777;
-    --line:#dce4eb;
-    --accent:#126b66;
-    --soft:#f1f6f5
+    --line:#d5dbdb;
+    --accent:#2475a5;
+    --soft:#f1f5f8
   }
   body {
     background:white;
@@ -762,7 +766,7 @@ a:focus-visible,button:focus-visible {
   vertical-align:middle
 }
 .hero-contact .resume-icon {
-  color:#8ed5c4;
+  color:#5dade2;
   width:14px;
   height:14px
 }
