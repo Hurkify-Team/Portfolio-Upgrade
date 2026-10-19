@@ -1,0 +1,1056 @@
+<!-- Portfolio of Sobowale Olamide | Fullstack Developer --><!DOCTYPE html><html lang="en" data-theme="dark"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the professional portfolio of Sobowale Olamide, a Fullstack Developer and Software Engineer based in Lagos, Nigeria. Specializing in JavaScript, TypeScript, React, Node.js, Express,Next.js, Supabase, MongoDB and modern web development. Available for freelance and remote work.">
+    <meta name="keywords" content="Sobowale Olamide, Olamide portfolio, fullstack developer, web developer Lagos, JavaScript developer, TypeScript developer, React developer, Node.js developer, Express developer, Supabase developer, MongoDB developer,Next.js, software engineer Nigeria, freelance web developer, portfolio website">
+    <meta name="author" content="Sobowale Olamide">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sobowale Olamide — Fullstack Developer">
+    <meta property="og:description" content="Professional portfolio of Sobowale Olamide, Fullstack Developer in Lagos, Nigeria.">
+    <meta property="og:image" content="images/profile-main.png">
+    <meta property="og:url" content="https://vector005awolesi.github.io/Portfolio/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sobowale Olamide — Fullstack Developer">
+    <meta name="twitter:description" content="Explore projects and skills of Sobowale Olamide, a Fullstack Developer in Lagos, Nigeria.">
+    <meta name="twitter:image" content="ASSETS/IMAGES/profile-main.png">
+
+    <title>
+      Sobowale Olamide — Fullstack Developer & Software Engineer | Lagos, Nigeria
+    </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/icon.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+      // Tailwind config mapping to custom variables for dynamic themes
+      tailwind.config = {
+        darkMode: ["selector", '[data-theme="dark"]'],
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+              outfit: ["Outfit", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+            },
+            colors: {
+              navy: {
+                950: "var(--bg-base)",
+                900: "var(--bg-surface)",
+                800: "var(--bg-card)",
+                700: "var(--bg-card-hover)",
+                600: "var(--bg-elevated)",
+                500: "var(--accent-dim)",
+              },
+              slate: {
+                50: "var(--text-primary)",
+                100: "var(--text-primary)",
+                200: "var(--text-primary)",
+                300: "var(--text-secondary)",
+                400: "var(--text-secondary)",
+                500: "var(--text-muted)",
+                600: "var(--text-muted)",
+                700: "var(--text-muted)",
+                800: "var(--text-muted)",
+                900: "var(--text-primary)",
+              },
+              blue: {
+                400: "var(--accent-light)",
+                500: "var(--accent)",
+                600: "var(--accent-solid)",
+                glow: "var(--accent-dim)",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-inter bg-navy-950 text-slate-100 min-h-screen overflow-x-hidden transition-colors duration-300" id="body">
+    <!-- ═══════════════════════════ LOADING SCREEN ═══════════════════════════ -->
+    <div id="loadingContainer">
+      <div class="loader-scene" aria-hidden="true">
+        <div class="loader-cube-3d">
+          <div class="loader-cube-face loader-face-front">
+            <div class="loader-fluid-track">
+              <div class="loader-fluid-fill"></div>
+              <div class="loader-fluid-wave"></div>
+            </div>
+          </div>
+          <div class="loader-cube-face loader-face-back"></div>
+          <div class="loader-cube-face loader-face-right"></div>
+          <div class="loader-cube-face loader-face-left"></div>
+          <div class="loader-cube-face loader-face-top"></div>
+          <div class="loader-cube-face loader-face-bottom"></div>
+        </div>
+      </div>
+      <p class="loader-text font-mono">
+        Initializing<span class="loader-dots"></span>
+      </p>
+    </div>
+
+    <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+    <div class="navbar-shell fixed top-4 left-1/2 -translate-x-1/2 w-[94%] max-w-5xl z-50 flex items-start gap-2.5">
+      <nav id="navbar" class="navbar-glass flex-1 min-w-0 rounded-full">
+        <div class="navbar-inner px-4 sm:px-6 flex items-center justify-between h-14 gap-2">
+          <!-- Logo -->
+          <a href="#hero" class="font-outfit text-blue-400 font-bold text-sm tracking-widest hover:text-blue-300 transition-colors logo-cursor shrink-0">
+            SO
+          </a>
+
+          <!-- Desktop Nav Links -->
+          <ul class="hidden md:flex items-center gap-1 nav-pill">
+            <li><a href="#hero" class="nav-link">About</a></li>
+            <li><a href="#tools" class="nav-link">Tools</a></li>
+            <li><a href="#career" class="nav-link">Career</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <!-- Actions: Hire Me always visible + theme -->
+          <div class="navbar-actions flex items-center gap-2 shrink-0">
+            <a href="#contact" class="nav-hire-btn">
+              <span class="nav-hire-label">Hire Me</span>
+              <i class="fas fa-arrow-right text-[10px]"></i>
+            </a>
+            <button id="theme-btn" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle light/dark mode">
+              <i class="fas fa-sharp fa-moon" id="theme-icon"></i>
+            </button>
+            <button id="mobile-menu-btn" class="mobile-menu-btn-outside md:hidden" aria-label="Open menu" aria-expanded="false">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu (dropdown inside pill) -->
+        <div id="mobile-menu" class="md:hidden mobile-menu-wrapper">
+          <div class="mobile-menu-inner">
+            <div class="px-6 py-4 space-y-2 border-t border-white/5">
+              <a href="#hero" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+              <a href="#tools" class="mobile-nav-link" onclick="closeMobileMenu()">Tools</a>
+              <a href="#career" class="mobile-nav-link" onclick="closeMobileMenu()">Career</a>
+              <a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">Projects</a>
+              <a href="#testimonials" class="mobile-nav-link" onclick="closeMobileMenu()">Testimonials</a>
+              <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile menu toggle — outside the navbar pill -->
+    </div>
+
+    <!-- ═══════════════════════════ HERO SECTION ═══════════════════════════ -->
+    <section id="hero" class="min-h-screen pt-24 pb-12 flex items-start lg:items-center relative overflow-hidden">
+      <!-- Animated Canvas Grid -->
+      <canvas id="hero-grid-canvas" class="hero-canvas"></canvas>
+      <!-- Background grid + glow -->
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+
+      <div class="hero-content max-w-6xl mx-auto px-4 sm:px-6 w-full py-8 lg:py-16">
+        <div class="hero-layout">
+          <!-- Text Content — first on mobile, left on desktop -->
+          <div class="hero-text-col">
+            <div class="hero-reveal hero-status-pill" style="transition-delay: 100ms">
+              <span class="hero-status-dot"></span>
+              <span class="font-mono text-xs text-blue-400 tracking-wider">Available for work</span>
+            </div>
+
+            <p class="hero-reveal hero-eyebrow font-mono text-xs text-slate-500 tracking-widest uppercase mb-2" style="transition-delay: 180ms">
+              Fullstack Developer · Lagos, NG
+            </p>
+
+            <h1 class="hero-reveal hero-headline font-outfit font-bold text-slate-100" style="transition-delay: 220ms">
+              Hey, I'm
+              <span class="block gradient-text mt-1 font-outfit bounce-text">Sobowale Olamide</span>
+            </h1>
+
+            <p class="hero-reveal hero-role text-lg sm:text-xl text-slate-400 font-medium mb-3" style="transition-delay: 300ms">
+              Fullstack Developer & Software Engineer
+            </p>
+
+            <p class="hero-reveal hero-desc text-slate-400 mb-8 leading-relaxed" style="transition-delay: 380ms">
+              With over <strong class="text-slate-200">4+ years</strong> of
+              experience building dynamic web applications and software. CEO at
+              <strong class="text-blue-400">Hurkify Technology Limited</strong>. I craft
+              end-to-end solutions that are fast, accessible, and built to
+              scale.
+            </p>
+
+            <div class="hero-reveal hero-cta-row" style="transition-delay: 460ms">
+              <a href="#contact" class="btn-primary">
+                <i class="fas fa-paper-plane"></i> Get In Touch
+              </a>
+              <a class="btn-secondary" href="resume.html" aria-label="View and download Sobowale Olamide's resume">
+                <i class="fas fa-download"></i> My Resume
+              </a>
+            </div>
+
+            <div class="hero-reveal hero-social-row" style="transition-delay: 540ms">
+              <span class="text-xs text-slate-500 font-mono">FOLLOW ME</span>
+              <div class="hero-social-divider"></div>
+              <div class="flex gap-2">
+                <a href="https://github.com/Hurkify-Team" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/olamide-sobowale-448958b7?" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/iam_mide_talk?s=21" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X / Twitter">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/share/18BqLXpEv1/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.threads.com/@mide_talk?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Threads">
+                  <i class="fab fa-threads"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Brand Visual — below text on mobile, right on desktop -->
+          <div class="hero-brand-visual hero-reveal" style="transition-delay: 350ms" role="img" aria-label="Developer brand visual with coding animation, SO monogram, and React, Node.js, TypeScript stack">
+            <div class="brand-visual-glow"></div>
+            <div class="brand-visual-frame">
+              <div class="brand-terminal">
+                <div class="brand-terminal-header">
+                  <span class="brand-dot brand-dot-red"></span>
+                  <span class="brand-dot brand-dot-yellow"></span>
+                  <span class="brand-dot brand-dot-green"></span>
+                  <span class="brand-terminal-url">olamide.dev</span>
+                  <div class="brand-code-signal" aria-hidden="true">
+                    <span class="signal-line"></span>
+                    <span class="signal-line"></span>
+                    <span class="signal-line"></span>
+                  </div>
+                </div>
+                <div class="brand-terminal-body">
+                  <div class="brand-monogram">SO</div>
+                  <pre class="brand-code"><code id="typed-profile-code" data-code="// Olamide at a glance
+const olamide = {
+  name: 'Sobowale Olamide',
+  role: 'Fullstack Developer',
+  focus: 'Web apps'
+};">// Olamide at a glance
+const olamide = {
+  name: 'Sobowale Olamide',
+  role: 'Fullstack Developer'
+};</code><span class="brand-cursor"></span></pre>
+                </div>
+              </div>
+              <!-- <div class="brand-float brand-float-1"><i class="fab fa-react"></i> React</div> -->
+              <div class="brand-float brand-float-2">
+                <i class="fab fa-node-js"></i> Node.js
+              </div>
+              <div class="brand-float brand-float-3">
+                <i class="fab fa-js"></i> TypeScript
+              </div>
+            </div>
+            <div class="brand-stat-badge brand-stat-badge-1">
+              <span class="badge-num">4+</span>
+              <span class="badge-lbl">Years Exp.</span>
+            </div>
+            <div class="brand-stat-badge top-[10px] right-[-50px] brand-stat-badge-2">
+              <span class="badge-num">15+</span>
+              <span class="badge-lbl">Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar hero-stats-bar mt-12 lg:mt-16 hero-reveal" style="transition-delay: 620ms">
+          <div class="stat-item">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Years of Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">20+</span>
+            <span class="stat-label">Websites Designed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ TOOLS SECTION ═══════════════════════════ -->
+    <section id="tools" class="section-pad relative">
+      <div class="section-glow-left"></div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="section-header reveal-up">
+          <span class="section-tag">MY ARSENAL</span>
+          <h2 class="section-title">
+            Tools I <span class="gradient-text bounce-text">Work With</span>
+          </h2>
+          <p class="section-subtitle">
+            The technologies and tools I use to build end-to-end digital
+            products
+          </p>
+        </div>
+
+        <!-- Tech Tools Grid -->
+        <div class="tools-grid reveal-stagger">
+          <div class="tool-card group" data-tool="HTML5">
+            <div class="tool-icon-wrap">
+              <i class="fab fa-html5 tool-icon" style="color: #e34c26"></i>
+            </div>
+            <span class="tool-name">HTML5</span>
+            <span class="tool-category">Markup</span>
+          </div>
+
+          <div class="tool-card group" data-tool="CSS3">
+            <div class="tool-icon-wrap">
+              <i class="fab fa-css3-alt tool-icon" style="color: #264de4"></i>
+            </div>
+            <span class="tool-name">CSS3</span>
+            <span class="tool-category">Styling</span>
+          </div>
+
+          <div class="tool-card group" data-tool="JavaScript">
+            <div class="tool-icon-wrap">
+              <i class="fab fa-js tool-icon" style="color: #f7df1e"></i>
+            </div>
+            <span class="tool-name">JavaScript</span>
+            <span class="tool-category">Language</span>
+          </div>
+
+          <div class="tool-card group" data-tool="TypeScript">
+            <div class="tool-icon-wrap">
+              <span class="tool-icon font-mono font-bold text-xl" style="color: #3178c6">TS</span>
+            </div>
+            <span class="tool-name">TypeScript</span>
+            <span class="tool-category">Language</span>
+          </div>
+
+          <div class="tool-card group" data-tool="React">
+            <div class="tool-icon-wrap">
+              <i class="fab fa-react tool-icon" style="color: #61dafb"></i>
+            </div>
+            <span class="tool-name">React</span>
+            <span class="tool-category">Frontend</span>
+          </div>
+
+          <div class="tool-card group" data-tool="Next.js">
+            <div class="tool-icon-wrap">
+              <span class="tool-icon font-mono font-bold text-lg" style="color: #ffffff">N</span>
+            </div>
+            <span class="tool-name">Next.js</span>
+            <span class="tool-category">Fullstack Framework</span>
+          </div>
+          <div class="tool-card group" data-tool="Tailwind CSS">
+            <div class="tool-icon-wrap">
+              <span class="tool-icon font-mono font-bold text-xl" style="color: #38bdf8">TW</span>
+            </div>
+            <span class="tool-name">Tailwind CSS</span>
+            <span class="tool-category">Styling</span>
+          </div>
+
+          <div class="tool-card group" data-tool="Node.js">
+            <div class="tool-icon-wrap">
+              <i class="fab fa-node-js tool-icon" style="color: #68a063"></i>
+            </div>
+            <span class="tool-name">Node.js</span>
+            <span class="tool-category">Backend</span>
+          </div>
+
+          <div class="tool-card group" data-tool="Express">
+            <div class="tool-icon-wrap">
+              <span class="tool-icon font-mono font-bold text-lg" style="color: #ffffff">EX</span>
+            </div>
+            <span class="tool-name">Express</span>
+            <span class="tool-category">Backend</span>
+          </div>
+
+          <div class="tool-card group" data-tool="MongoDB">
+            <div class="tool-icon-wrap">
+              <span class="tool-icon font-mono font-bold text-xl" style="color: #47a248">MG</span>
+            </div>
+            <span class="tool-name">MongoDB</span>
+            <span class="tool-category">Database</span>
+          </div>
+
+          <div class="tool-card group" data-tool="SQL">
+            <div class="tool-icon-wrap">
+              <i class="fas fa-database tool-icon" style="color: #f29111"></i>
+            </div>
+            <span class="tool-name">SQL</span>
+            <span class="tool-category">Database</span>
+          </div>
+
+          <div class="tool-card group" data-tool="Supabase">
+            <div class="tool-icon-wrap">
+              <span class="tool-icon font-mono font-bold text-xl" style="color: #3ecf8e">SB</span>
+            </div>
+            <span class="tool-name">Supabase</span>
+            <span class="tool-category">Backend-as-a-Service</span>
+          </div>
+
+          <div class="tool-card group" data-tool="GitHub">
+            <div class="tool-icon-wrap">
+              <i class="fab fa-github tool-icon" style="color: #ffffff"></i>
+            </div>
+            <span class="tool-name">GitHub</span>
+            <span class="tool-category">Version Control</span>
+          </div>
+        </div>
+
+        <!-- Also skilled in badge row -->
+        <div class="flex flex-wrap gap-2 mt-8 justify-center reveal-up" style="animation-delay: 0.3s">
+          <span class="also-badge">UI/UX Design</span>
+          <span class="also-badge">SEO Optimization</span>
+          <span class="also-badge">REST APIs</span>
+          <span class="also-badge">Responsive Design</span>
+          <span class="also-badge">Performance Optimization</span>
+        </div>
+
+        <!-- ═══ SOFT SKILLS ═══ -->
+        <div class="mt-20 reveal-up" style="animation-delay: 0.1s">
+          <div class="section-header">
+            <span class="section-tag">PEOPLE SKILLS</span>
+            <h2 class="section-title">
+              Soft <span class="gradient-text bounce-text">Skills</span>
+            </h2>
+            <p class="section-subtitle">
+              Technical excellence is only half the story — here's how I work
+              with people
+            </p>
+          </div>
+
+          <div class="soft-skills-grid reveal-stagger">
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon-wrap">
+                <i class="fas fa-crown soft-skill-icon"></i>
+              </div>
+              <h3 class="soft-skill-title">Leadership</h3>
+              <p class="soft-skill-desc">
+                CEO of Hurkify Technology Limited. Leading cross-functional teams, setting
+                project vision and driving execution toward shared goals.
+              </p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon-wrap">
+                <i class="fas fa-comments soft-skill-icon"></i>
+              </div>
+              <h3 class="soft-skill-title">Communication</h3>
+              <p class="soft-skill-desc">
+                Articulating complex technical concepts clearly to both
+                technical and non-technical stakeholders. Active listener and
+                empathetic communicator.
+              </p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon-wrap">
+                <i class="fas fa-lightbulb soft-skill-icon"></i>
+              </div>
+              <h3 class="soft-skill-title">Problem Solving</h3>
+              <p class="soft-skill-desc">
+                Analytical thinker who breaks down complex challenges into
+                manageable pieces and delivers creative, efficient solutions
+                under pressure.
+              </p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon-wrap">
+                <i class="fas fa-users soft-skill-icon"></i>
+              </div>
+              <h3 class="soft-skill-title">Teamwork</h3>
+              <p class="soft-skill-desc">
+                Collaborative team player who thrives in agile environments,
+                contributes meaningfully and uplifts those around me.
+              </p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon-wrap">
+                <i class="fas fa-arrows-rotate soft-skill-icon"></i>
+              </div>
+              <h3 class="soft-skill-title">Adaptability</h3>
+              <p class="soft-skill-desc">
+                Quick to embrace new technologies, workflows, and requirements.
+                Comfortable navigating ambiguity and pivoting strategies when
+                needed.
+              </p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon-wrap">
+                <i class="fas fa-brain soft-skill-icon"></i>
+              </div>
+              <h3 class="soft-skill-title">Critical Thinking</h3>
+              <p class="soft-skill-desc">
+                Evaluating options objectively, questioning assumptions and
+                making data-informed decisions that align with both user needs
+                and business goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CAREER SECTION ═══════════════════════════ -->
+    <section id="career" class="section-pad relative">
+      <div class="section-glow-right"></div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="section-header reveal-up">
+          <span class="section-tag">WORK HISTORY</span>
+          <h2 class="section-title">
+            My <span class="gradient-text bounce-text">Experience</span>
+          </h2>
+          <p class="section-subtitle">
+            My professional journey and key milestones
+          </p>
+        </div>
+
+        <div class="timeline reveal-stagger">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">CEO & Senior Developer</h3>
+                  <p class="timeline-company">Hurkify Technology Limited</p>
+                </div>
+                <span class="timeline-badge">JAN 2025 — Present</span>
+              </div>
+              <p class="timeline-desc">
+                Founded and currently leading Hurkify Technology Limited, overseeing project
+                development, strategy and execution. Actively involved in
+                full-stack coding, team coordination and delivering innovative
+                digital solutions for clients across multiple industries.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="tl-tag">Leadership</span>
+                <span class="tl-tag">Fullstack Dev</span>
+                <span class="tl-tag">Strategy</span>
+                <span class="tl-tag">Client Management</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">AI Model Development</h3>
+                  <p class="timeline-company">Collaborative Research Project</p>
+                </div>
+                <span class="timeline-badge">SEP 2025 — Present</span>
+              </div>
+              <p class="timeline-desc">
+                Collaborated with a team of developers to design, build and test
+                an AI model. Contributed to the codebase, problem-solving
+                sessions and cross-team communication, advancing the project
+                from concept to prototype.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="tl-tag">AI/ML</span>
+                <span class="tl-tag">Python</span>
+                <span class="tl-tag">Teamwork</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-hospital"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">ICT Officer &amp; Software Engineer</h3>
+                  <p class="timeline-company">HEFAMAA — Health Facilities Monitoring &amp; Accreditation Agency</p>
+                </div>
+                <span class="timeline-badge">2023 — Present</span>
+              </div>
+              <p class="timeline-desc">
+                Supports the agency's digital operations and technology initiatives by maintaining ICT systems, resolving technical issues and developing software solutions that improve internal workflows and service delivery.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="tl-tag">ICT Operations</span>
+                <span class="tl-tag">Software Engineering</span>
+                <span class="tl-tag">Technical Support</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Fullstack Developer</h3>
+                  <p class="timeline-company">
+                    Personal Projects & Freelance
+                  </p>
+                </div>
+                <span class="timeline-badge">DEC 2023 — Present</span>
+              </div>
+              <p class="timeline-desc">
+                Independently developed 15+ projects ranging from e-commerce
+                platforms, fintech apps, educational tools and agency websites.
+                Continuously expanding skill set across the full stack — from
+                pixel-perfect UI to robust backend APIs.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="tl-tag">React</span>
+                <span class="tl-tag">Node.js</span>
+                <span class="tl-tag">Supabase</span>
+                <span class="tl-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Software Engineer</h3>
+                  <p class="timeline-company">J &amp; R Hospital</p>
+                </div>
+                <span class="timeline-badge">2023 — 2024</span>
+              </div>
+              <p class="timeline-desc">
+                Developed and supported software solutions for hospital operations, translating functional requirements into reliable digital tools while maintaining systems and assisting users with technical issues.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="tl-tag">Software Development</span>
+                <span class="tl-tag">Systems Support</span>
+                <span class="tl-tag">Healthcare Technology</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-industry"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Gas Plant Operator</h3>
+                  <p class="timeline-company">Nigeria Gas Company (now NGPTC)</p>
+                </div>
+                <span class="timeline-badge">2021 — 2023</span>
+              </div>
+              <p class="timeline-desc">
+                Monitored gas-plant processes and operating conditions, followed established safety procedures and maintained accurate operational records to support safe, reliable plant performance.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="tl-tag">Plant Operations</span>
+                <span class="tl-tag">Safety Compliance</span>
+                <span class="tl-tag">Process Monitoring</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Brand Manager &amp; Web Developer</h3>
+                  <p class="timeline-company">Ajeh Media Advertising Company</p>
+                </div>
+                <span class="timeline-badge">2019 — 2021</span>
+              </div>
+              <p class="timeline-desc">
+                Managed brand presentation across digital channels and developed responsive web experiences that aligned creative execution with client objectives, campaign messaging and audience needs.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="tl-tag">Brand Management</span>
+                <span class="tl-tag">Web Development</span>
+                <span class="tl-tag">Digital Strategy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+    <section id="projects" class="section-pad relative">
+      <div class="section-glow-left"></div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="section-header reveal-up">
+          <span class="section-tag">PORTFOLIO</span>
+          <h2 class="section-title">
+            Featured <span class="gradient-text bounce-text">Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            Explore selected projects from my GitHub. Open a card for details,
+            source code and available live demos.
+          </p>
+        </div>
+
+<div class="projects-grid reveal-stagger">
+<article class="project-card" onclick="openModal('modal-github-0')" tabindex="0" role="button" aria-label="View HEFAMAA Portal project details">
+      <div class="project-card-img-wrap"><img src="images/hefamaa-portal-preview.png" alt="E-HEFAMAA facility registration portal login page" class="project-card-img hefamaa-site-preview" loading="lazy"><div class="project-card-overlay"><span class="project-overlay-cta"><i class="fas fa-expand-alt"></i> View Project</span></div></div>
+      <div class="project-card-body"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="project-card-title">HEFAMAA Portal</h3><span class="project-type-badge">Health Tech</span></div><p class="project-card-desc">A health facility registration portal supporting the monitoring and regulation of health facilities in Lagos State.</p><div class="project-stack"><span class="stack-pill">TypeScript</span><span class="stack-pill">Next.js</span><span class="stack-pill">React</span></div></div>
+    </article>
+<article class="project-card" onclick="openModal('modal-github-1')" tabindex="0" role="button" aria-label="View Hefa AI Agent project details">
+      <div class="project-card-img-wrap"><div class="github-project-art github-project-art-1" aria-hidden="true"><span class="github-project-kicker">HURKIFY-TEAM / 02</span><i class="fas fa-robot"></i><span class="github-project-name">Hefa AI Agent</span></div><div class="project-card-overlay"><span class="project-overlay-cta"><i class="fas fa-expand-alt"></i> View Project</span></div></div>
+      <div class="project-card-body"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="project-card-title">Hefa AI Agent</h3><span class="project-type-badge">AI / Reporting</span></div><p class="project-card-desc">An AI agent built to improve data collection and reporting for HEFAMAA.</p><div class="project-stack"><span class="stack-pill">TypeScript</span></div></div>
+    </article>
+<article class="project-card" onclick="openModal('modal-github-2')" tabindex="0" role="button" aria-label="View Hurkfield project details">
+      <div class="project-card-img-wrap"><img src="images/hurkfield-preview.png" alt="HurkField homepage featuring its research data collection platform" class="project-card-img hurkfield-site-preview" loading="lazy"><div class="project-card-overlay"><span class="project-overlay-cta"><i class="fas fa-expand-alt"></i> View Project</span></div></div>
+      <div class="project-card-body"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="project-card-title">Hurkfield</h3><span class="project-type-badge">Field Data</span></div><p class="project-card-desc">A structured field data collection platform with survey templates, enumerator codes, GPS verification and quality assurance monitoring.</p><div class="project-stack"><span class="stack-pill">Python</span></div></div>
+    </article>
+<article class="project-card" onclick="openModal('modal-github-3')" tabindex="0" role="button" aria-label="View Aduke Blog project details">
+      <div class="project-card-img-wrap"><img src="images/aduke-blog-preview.png" alt="Aduke Radio Blog homepage featuring entertainment stories and live radio" class="project-card-img aduke-site-preview" loading="lazy"><div class="project-card-overlay"><span class="project-overlay-cta"><i class="fas fa-expand-alt"></i> View Project</span></div></div>
+      <div class="project-card-body"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="project-card-title">Aduke Blog</h3><span class="project-type-badge">Entertainment</span></div><p class="project-card-desc">A Nigerian entertainment blog built with Next.js and React.</p><div class="project-stack"><span class="stack-pill">TypeScript</span><span class="stack-pill">Next.js</span><span class="stack-pill">React</span></div></div>
+    </article>
+<article class="project-card" onclick="openModal('modal-github-4')" tabindex="0" role="button" aria-label="View Hurkify Technology Limited project details">
+      <div class="project-card-img-wrap"><img src="images/hurkify-technology-preview.png" alt="Hurkify Technology Limited homepage showing Better systems. Stronger businesses." class="project-card-img hurkify-site-preview" loading="lazy"><div class="project-card-overlay"><span class="project-overlay-cta"><i class="fas fa-expand-alt"></i> View Project</span></div></div>
+      <div class="project-card-body"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="project-card-title">Hurkify Technology Limited</h3><span class="project-type-badge">Company Website</span></div><p class="project-card-desc">The official Hurkify Technology Limited website, built with Next.js, React and Sanity.</p><div class="project-stack"><span class="stack-pill">TypeScript</span><span class="stack-pill">Next.js</span><span class="stack-pill">Sanity</span><span class="stack-pill">Supabase</span></div></div>
+    </article>
+<article class="project-card" onclick="openModal('modal-github-5')" tabindex="0" role="button" aria-label="View HurkME project details">
+      <div class="project-card-img-wrap"><div class="github-project-art github-project-art-1" aria-hidden="true"><span class="github-project-kicker">HURKIFY-TEAM / 06</span><i class="fas fa-chart-line"></i><span class="github-project-name">HurkME</span></div><div class="project-card-overlay"><span class="project-overlay-cta"><i class="fas fa-expand-alt"></i> View Project</span></div></div>
+      <div class="project-card-body"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="project-card-title">HurkME</h3><span class="project-type-badge">Creator Tools</span></div><p class="project-card-desc">A creator growth project from Hurkify-Team.</p><div class="project-stack"><span class="stack-pill">TypeScript</span></div></div>
+    </article>
+<article class="project-card" onclick="openModal('modal-github-6')" tabindex="0" role="button" aria-label="View Texture Mapping project details">
+      <div class="project-card-img-wrap"><div class="github-project-art github-project-art-2" aria-hidden="true"><span class="github-project-kicker">HURKIFY-TEAM / 07</span><i class="fas fa-cube"></i><span class="github-project-name">Texture Mapping</span></div><div class="project-card-overlay"><span class="project-overlay-cta"><i class="fas fa-expand-alt"></i> View Project</span></div></div>
+      <div class="project-card-body"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="project-card-title">Texture Mapping</h3><span class="project-type-badge">3D / Web Graphics</span></div><p class="project-card-desc">An interactive Three.js scene with a rotating textured cube, lighting, orbit controls, keyboard rotation and responsive resizing.</p><div class="project-stack"><span class="stack-pill">HTML</span><span class="stack-pill">Three.js</span><span class="stack-pill">JavaScript</span></div></div>
+    </article>
+<article class="project-card" onclick="openModal('modal-github-7')" tabindex="0" role="button" aria-label="View Olamide Portfolio project details">
+      <div class="project-card-img-wrap"><img src="images/olamide-portfolio-preview.png" alt="Olamide Sobowale portfolio homepage" class="project-card-img portfolio-site-preview" loading="lazy"><div class="project-card-overlay"><span class="project-overlay-cta"><i class="fas fa-expand-alt"></i> View Project</span></div></div>
+      <div class="project-card-body"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="project-card-title">Olamide Portfolio</h3><span class="project-type-badge">Portfolio</span></div><p class="project-card-desc">My personal work portfolio showcasing projects, skills and development experience.</p><div class="project-stack"><span class="stack-pill">HTML</span></div></div>
+    </article>
+<article class="project-card" onclick="openModal('modal-edamaa')" tabindex="0" role="button" aria-label="View Edamaa3D project details">
+<div class="project-card-img-wrap"><img src="images/edamaa-preview.png" alt="Edamaa3D learning platform homepage" class="project-card-img edamaa-site-preview" loading="lazy"><div class="project-card-overlay"><span class="project-overlay-cta"><i class="fas fa-expand-alt"></i> View Project</span></div></div>
+<div class="project-card-body"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="project-card-title">Edamaa3D</h3><span class="project-type-badge">Education</span></div><p class="project-card-desc">A learning platform where students explore courses and ask questions at the exact video timestamp where they need help.</p><div class="project-stack"><span class="stack-pill">Video Learning</span><span class="stack-pill">Course Platform</span></div></div></article>
+        </div>
+        <div class="github-project-footer"><a class="modal-btn-code" href="https://github.com/Hurkify-Team?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> All repositories on GitHub</a></div>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+<div id="modal-github-0" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-github-0-title"><div class="modal-container">
+      <button class="modal-close" onclick="closeModal('modal-github-0')" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <img src="images/hefamaa-portal-preview.png" alt="HEFAMAA Portal login page screenshot" class="hefamaa-modal-preview" loading="lazy"><div class="modal-body"><div class="modal-meta"><span class="modal-category-badge">Health Tech</span></div><h2 id="modal-github-0-title" class="modal-title">HEFAMAA Portal</h2><p class="modal-desc">A health facility registration portal supporting the monitoring and regulation of health facilities in Lagos State.</p>
+      <div class="modal-section"><h4 class="modal-section-label">Tech Stack</h4><div class="modal-stack"><span class="modal-stack-pill">TypeScript</span><span class="modal-stack-pill">Next.js</span><span class="modal-stack-pill">React</span></div></div>
+      <div class="modal-actions"><a href="https://github.com/Hurkify-Team/Hefamaa-Portal-Upgrade" target="_blank" rel="noopener noreferrer" class="modal-btn-code"><i class="fab fa-github"></i> View Code</a><a href="https://portal.hefamaaportal.com.ng/login" target="_blank" rel="noopener noreferrer" class="modal-btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div></div></div>
+<div id="modal-github-1" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-github-1-title"><div class="modal-container">
+      <button class="modal-close" onclick="closeModal('modal-github-1')" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="github-project-art github-project-art-1" aria-hidden="true"><span class="github-project-kicker">HURKIFY-TEAM / 02</span><i class="fas fa-robot"></i><span class="github-project-name">Hefa AI Agent</span></div><div class="modal-body"><div class="modal-meta"><span class="modal-category-badge">AI / Reporting</span></div><h2 id="modal-github-1-title" class="modal-title">Hefa AI Agent</h2><p class="modal-desc">An AI agent built to improve data collection and reporting for HEFAMAA.</p>
+      <div class="modal-section"><h4 class="modal-section-label">Tech Stack</h4><div class="modal-stack"><span class="modal-stack-pill">TypeScript</span></div></div>
+      <div class="modal-actions"><a href="https://github.com/Hurkify-Team/Hefa-Ai-Agent" target="_blank" rel="noopener noreferrer" class="modal-btn-code"><i class="fab fa-github"></i> View Code</a><a href="https://hefa-ai-agent.vercel.app" target="_blank" rel="noopener noreferrer" class="modal-btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div></div></div>
+<div id="modal-github-2" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-github-2-title"><div class="modal-container">
+      <button class="modal-close" onclick="closeModal('modal-github-2')" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <img src="images/hurkfield-preview.png" alt="HurkField website homepage screenshot" class="hurkfield-modal-preview" loading="lazy"><div class="modal-body"><div class="modal-meta"><span class="modal-category-badge">Field Data</span></div><h2 id="modal-github-2-title" class="modal-title">Hurkfield</h2><p class="modal-desc">A structured field data collection platform with survey templates, enumerator codes, GPS verification and quality assurance monitoring.</p>
+      <div class="modal-section"><h4 class="modal-section-label">Tech Stack</h4><div class="modal-stack"><span class="modal-stack-pill">Python</span></div></div>
+      <div class="modal-actions"><a href="https://github.com/Hurkify-Team/Hurkfield" target="_blank" rel="noopener noreferrer" class="modal-btn-code"><i class="fab fa-github"></i> View Code</a><a href="https://hurkfield-rxuj.onrender.com" target="_blank" rel="noopener noreferrer" class="modal-btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div></div></div>
+<div id="modal-github-3" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-github-3-title"><div class="modal-container">
+      <button class="modal-close" onclick="closeModal('modal-github-3')" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <img src="images/aduke-blog-preview.png" alt="Aduke Radio Blog homepage screenshot" class="aduke-modal-preview" loading="lazy"><div class="modal-body"><div class="modal-meta"><span class="modal-category-badge">Entertainment</span></div><h2 id="modal-github-3-title" class="modal-title">Aduke Blog</h2><p class="modal-desc">A Nigerian entertainment blog built with Next.js and React.</p>
+      <div class="modal-section"><h4 class="modal-section-label">Tech Stack</h4><div class="modal-stack"><span class="modal-stack-pill">TypeScript</span><span class="modal-stack-pill">Next.js</span><span class="modal-stack-pill">React</span></div></div>
+      <div class="modal-actions"><a href="https://github.com/Hurkify-Team/Aduke-Blog" target="_blank" rel="noopener noreferrer" class="modal-btn-code"><i class="fab fa-github"></i> View Code</a></div></div></div></div>
+<div id="modal-github-4" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-github-4-title"><div class="modal-container">
+      <button class="modal-close" onclick="closeModal('modal-github-4')" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <img src="images/hurkify-technology-preview.png" alt="Hurkify Technology Limited website homepage" class="hurkify-modal-preview" loading="lazy"><div class="modal-body"><div class="modal-meta"><span class="modal-category-badge">Company Website</span></div><h2 id="modal-github-4-title" class="modal-title">Hurkify Technology Limited</h2><p class="modal-desc">The official Hurkify Technology Limited website, built with Next.js, React and Sanity.</p>
+      <div class="modal-section"><h4 class="modal-section-label">Tech Stack</h4><div class="modal-stack"><span class="modal-stack-pill">TypeScript</span><span class="modal-stack-pill">Next.js</span><span class="modal-stack-pill">Sanity</span><span class="modal-stack-pill">Supabase</span></div></div>
+      <div class="modal-actions"><a href="https://github.com/Hurkify-Team/Hurkify-Technology-Limited-Website" target="_blank" rel="noopener noreferrer" class="modal-btn-code"><i class="fab fa-github"></i> View Code</a><a href="https://hurkifytechologylimited.com" target="_blank" rel="noopener noreferrer" class="modal-btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div></div></div>
+<div id="modal-github-5" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-github-5-title"><div class="modal-container">
+      <button class="modal-close" onclick="closeModal('modal-github-5')" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="github-project-art github-project-art-1" aria-hidden="true"><span class="github-project-kicker">HURKIFY-TEAM / 06</span><i class="fas fa-chart-line"></i><span class="github-project-name">HurkME</span></div><div class="modal-body"><div class="modal-meta"><span class="modal-category-badge">Creator Tools</span></div><h2 id="modal-github-5-title" class="modal-title">HurkME</h2><p class="modal-desc">A creator growth project from Hurkify-Team.</p>
+      <div class="modal-section"><h4 class="modal-section-label">Tech Stack</h4><div class="modal-stack"><span class="modal-stack-pill">TypeScript</span></div></div>
+      <div class="modal-actions"><a href="https://github.com/Hurkify-Team/HurkME" target="_blank" rel="noopener noreferrer" class="modal-btn-code"><i class="fab fa-github"></i> View Code</a></div></div></div></div>
+<div id="modal-github-6" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-github-6-title"><div class="modal-container">
+      <button class="modal-close" onclick="closeModal('modal-github-6')" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="github-project-art github-project-art-2" aria-hidden="true"><span class="github-project-kicker">HURKIFY-TEAM / 07</span><i class="fas fa-cube"></i><span class="github-project-name">Texture Mapping</span></div><div class="modal-body"><div class="modal-meta"><span class="modal-category-badge">3D / Web Graphics</span></div><h2 id="modal-github-6-title" class="modal-title">Texture Mapping</h2><p class="modal-desc">An interactive Three.js scene with a rotating textured cube, lighting, orbit controls, keyboard rotation and responsive resizing.</p>
+      <div class="modal-section"><h4 class="modal-section-label">Tech Stack</h4><div class="modal-stack"><span class="modal-stack-pill">HTML</span><span class="modal-stack-pill">Three.js</span><span class="modal-stack-pill">JavaScript</span></div></div>
+      <div class="modal-actions"><a href="https://github.com/Hurkify-Team/Texture-Mapping" target="_blank" rel="noopener noreferrer" class="modal-btn-code"><i class="fab fa-github"></i> View Code</a><a href="https://texture-mapping-three.vercel.app" target="_blank" rel="noopener noreferrer" class="modal-btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div></div></div>
+<div id="modal-github-7" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-github-7-title"><div class="modal-container">
+      <button class="modal-close" onclick="closeModal('modal-github-7')" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <img src="images/olamide-portfolio-preview.png" alt="Olamide Sobowale portfolio homepage screenshot" class="portfolio-modal-preview" loading="lazy"><div class="modal-body"><div class="modal-meta"><span class="modal-category-badge">Portfolio</span></div><h2 id="modal-github-7-title" class="modal-title">Olamide Portfolio</h2><p class="modal-desc">My personal work portfolio showcasing projects, skills and development experience.</p>
+      <div class="modal-section"><h4 class="modal-section-label">Tech Stack</h4><div class="modal-stack"><span class="modal-stack-pill">HTML</span></div></div>
+      <div class="modal-actions"><a href="https://github.com/Hurkify-Team/Olamide-portfolio" target="_blank" rel="noopener noreferrer" class="modal-btn-code"><i class="fab fa-github"></i> View Code</a><a href="https://olamide-sobowale-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer" class="modal-btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div></div></div>
+<div id="modal-edamaa" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-edamaa-title"><div class="modal-container">
+<button class="modal-close" onclick="closeModal('modal-edamaa')" aria-label="Close modal"><i class="fas fa-times"></i></button>
+<img src="images/edamaa-preview.png" alt="Edamaa3D learning platform homepage screenshot" class="edamaa-modal-preview" loading="lazy">
+<div class="modal-body"><div class="modal-meta"><span class="modal-category-badge">Education / Learning Platform</span></div><h2 id="modal-edamaa-title" class="modal-title">Edamaa3D</h2><p class="modal-desc">A learning platform where students explore courses and ask questions at the exact video timestamp where they need help. Tutors or classmates can pick up the discussion from that moment in the lesson.</p>
+<div class="modal-actions"><a href="https://edamaa.vercel.app/" target="_blank" rel="noopener noreferrer" class="modal-btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a></div></div></div></div>
+    <section id="testimonials" class="section-pad relative">
+      <div class="section-glow-right"></div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="section-header reveal-up">
+          <span class="section-tag">SOCIAL PROOF</span>
+          <h2 class="section-title">
+            What People <span class="gradient-text bounce-text">Say</span>
+          </h2>
+          <p class="section-subtitle">
+            Kind words from clients and collaborators I've had the pleasure of
+            working with
+          </p>
+        </div>
+
+        <div class="testimonials-grid reveal-stagger">
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "Olamide delivered our agency website beyond our expectations. His
+              attention to design detail, clean code and fast delivery made the
+              whole process seamless. Highly recommend him for any web project."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #3498db, #2c3e50)">
+                <span>SK</span>
+              </div>
+              <div>
+                <p class="testimonial-name">Sarah K.</p>
+                <p class="testimonial-role">Product Manager · TechLaunch NG</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "Olamide built my portfolio and it truly captured my brand as a
+              makeup artist. It was exactly what I wanted, delivered very
+              quickly, and I was kept in the loop throughout the whole process.
+              Overall, it helped level up my business."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #3498db, #2980b9)">
+                <span>BM</span>
+              </div>
+              <div>
+                <p class="testimonial-name">Bammy S.</p>
+                <p class="testimonial-role">Makeup Artist · Bammy Makeover</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "Olamide built our e-commerce store and we saw a 40% increase in
+              user engagement within the first month. He understood our vision
+              perfectly and transformed it into a beautiful, functional
+              platform."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #e74c3c, #3498db)">
+                <span>AL</span>
+              </div>
+              <div>
+                <p class="testimonial-name">Amara L.</p>
+                <p class="testimonial-role">Founder · Soft Store NG</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ═══════════════════════════ CONTACT SECTION ═══════════════════════════ -->
+    <section id="contact" class="section-pad relative">
+      <div class="section-glow-left"></div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="section-header reveal-up">
+          <span class="section-tag">LET'S TALK</span>
+          <h2 class="section-title">
+            Get In <span class="gradient-text bounce-text">Touch</span>
+          </h2>
+          <p class="section-subtitle">
+            Have a project in mind or want to collaborate? I'd love to hear from
+            you.
+          </p>
+        </div>
+
+        <div class="contact-grid reveal-stagger">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="contact-availability">
+              <span class="avail-dot"></span>
+              <div>
+                <p class="avail-title">Available for Work</p>
+                <p class="avail-desc">
+                  I'm actively looking for remote jobs and freelance
+                  opportunities
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-details">
+              <a href="mailto:sobowaleolamide2@gmail.com" class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <p class="contact-detail-label">Email</p>
+                  <p class="contact-detail-value">sobowaleolamide2@gmail.com</p>
+                </div>
+              </a>
+              <a href="tel:+2349045083581" class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <p class="contact-detail-label">Phone</p>
+                  <p class="contact-detail-value">(+234) 9045083581</p>
+                </div>
+              </a>
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fas fa-location-dot"></i>
+                </div>
+                <div>
+                  <p class="contact-detail-label">Location</p>
+                  <p class="contact-detail-value">Lagos State, Nigeria</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <p class="contact-socials-label">Find me on</p>
+              <div class="flex gap-3">
+                <a href="https://github.com/Hurkify-Team" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/olamide-sobowale-448958b7?" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/iam_mide_talk?s=21" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X / Twitter">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/share/18BqLXpEv1/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.threads.com/@mide_talk?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Threads">
+                  <i class="fab fa-threads"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contact-form" method="post" name="contact">
+              <input type="hidden" name="form-name" value="contact">
+
+              <div class="form-group">
+                <label for="name-input" class="form-label">Your Name</label>
+                <div class="form-input-wrap">
+                  <i class="fas fa-user form-input-icon"></i>
+                  <input type="text" id="name-input" name="Name" placeholder="John Doe" class="form-input" required="">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email-input" class="form-label">Email Address</label>
+                <div class="form-input-wrap">
+                  <i class="fas fa-envelope form-input-icon"></i>
+                  <input type="email" id="email-input" name="Email" placeholder="john@example.com" class="form-input" required="">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject-input" class="form-label">Subject</label>
+                <div class="form-input-wrap">
+                  <i class="fas fa-tag form-input-icon"></i>
+                  <input type="text" id="subject-input" name="Subject" placeholder="Project Inquiry" class="form-input">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message-input" class="form-label">Message</label>
+                <textarea id="message-input" name="Content" placeholder="Tell me about your project..." class="form-textarea" required="" rows="5"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary w-full justify-center" id="submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+    <footer class="footer">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="footer-inner">
+          <a href="#hero" class="font-mono text-blue-400 font-semibold text-sm tracking-widest hover:text-blue-300 transition-colors">
+            SO
+          </a>
+          <p class="footer-copy">
+            Sobowale Olamide — Fullstack Developer & Software Engineer
+          </p>
+          <p class="footer-year">© <span id="copyright-year"></span></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Font Awesome Icons Script -->
+    <script src="js/icons.js"></script>
+    <!-- Main JS -->
+    <script src="js/index.js"></script>
+    <!-- Animated Grid Canvas -->
+    <script src="js/grid-canvas.js"></script>
+  
+<script async="" id="netlify-rum-container" src="js/rum.js" data-netlify-rum-site-id="6dfd26fe-2c53-4721-9694-66a0b3b0d802" data-netlify-deploy-branch="main" data-netlify-deploy-context="production" data-netlify-cwv-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaXRlX2lkIjoiNmRmZDI2ZmUtMmM1My00NzIxLTk2OTQtNjZhMGIzYjBkODAyIiwiYWNjb3VudF9pZCI6IjY4ZDJlNmFjOTRiMTY1OTQ5M2E2ZTRmNiIsImRlcGxveV9pZCI6IjZhM2FiOTA3NGExZDQ1MDAwODdhZDA2MyIsImlzc3VlciI6Im5mc2VydmVyIn0.F8qRL1qSLALv-Qv04fJQ5fO327sy9MLIJ1v0oVLMRh4"></script>
+
+
+</body></html>
